@@ -1,0 +1,37 @@
+.form{width:500px;border-radius:20px;height:135vh;}
+.login-heading{font-size:40px;font-weight: 700;text-transform: capitalize;font-family:Arial, Helvetica, sans-serif}
+.username{text-transform: capitalize;font-family: Arial, Helvetica, sans-serif;font-size:15px;}
+input{width:100%;border:1px solid transparent;box-shadow:none}
+.facebook-icon,.twitter-icon,.google-icon{border:1px solid transparent;padding:2% 4%;margin-left:2%;border-radius:50px;
+    background-color:#3b5998;color:white;font-size:25px;}
+.twitter-icon{padding:2% 3%;background-color: #1da1f2;}
+.google-icon{padding:2% 3.5%;background-color: #ea4335;}
+.facebook-icon:hover,.twitter-icon:hover,.google-icon:hover{background-color:rgb(80, 75, 75);transition:0.5s linear;}
+.hr-1,.hr-2{border:1px solid rgb(194, 187, 187);transition:0.2s linear;}
+.input-1,.input-2{font-size:18px;font-weight: 500;font-family: Arial, Helvetica, sans-serif;}
+#user{font-size:20px;color:rgb(194, 187, 187)}
+#lock{font-size:20px;color:rgb(194, 187, 187)}
+.login-button,.signup-button{border-radius:30px;text-transform: uppercase;font-weight: 600;padding:3% 3%;background-size:300% 100%;
+    background-image: linear-gradient(to right,fuchsia,deepskyblue,fuchsia);font-family: Arial, Helvetica, sans-serif;transition:all 0.5s linear;}
+    .login-button:hover,.signup-button:hover{background-position: 100% 0%;transition: all 0.5s linear;}
+a{color:rgb(148, 141, 141)}
+a:hover{text-decoration: none;}
+.forget-password{font-size:15px;font-weight:600;color:rgb(148, 141, 141)}
+.forget-password:hover,.sign-up:hover{color: blueviolet;}
+.sign-up{text-transform: uppercase;font-family: Arial, Helvetica, sans-serif;font-size:13px;}
+.show-me{display:none}
+*:focus {
+    outline: none;
+}
+@media screen and (max-width:550px){
+    .form{width:450px}
+}
+@media screen and (max-width:425px){
+    .form{width:380px}
+}
+@media screen and (max-width:375px){
+    .form{width:330px}
+}
+@media screen and (max-width:320px){
+    .form{margin-left:-5%;width:318px}
+}

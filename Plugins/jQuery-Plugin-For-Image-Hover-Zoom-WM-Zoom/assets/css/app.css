@@ -1,0 +1,11 @@
+article.body{
+	padding-bottom: 50px;
+}
+
+.navbar {
+	border-radius: 0px !important;
+}
+
+.syntaxhighlighter .toolbar{
+	display: none !important;
+}

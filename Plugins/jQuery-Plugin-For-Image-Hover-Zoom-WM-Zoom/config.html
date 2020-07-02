@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="WM Zoom - Plugin jQuery para visualização de imagens em alta definição">
+		<meta name="keywords" content="jQuery Zoom, Hight Definition, alta definição, imagens grandes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		
+		<link rel="stylesheet" href="assets/syntaxhighlighter/styles/shCore.css">
+		<link rel="stylesheet" href="assets/syntaxhighlighter/styles/shCoreDefault.css">
+
+		<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushXml.js"></script>
+
+		<title>WM Zoom - Plugin jQuery para visualização de imagens em alta definição</title>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" title="Home">Home</a></li>
+						<li><a href="init.html" title="Inicialização">Inicialização</a></li>
+						<li class="active"><a href="config.html" title="Configurações">Configurações</a></li>
+                        <li><a href="exemple.html" title="Exemplo">Exemplo</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+
+			<div class="row">
+
+			  	<div class="col-sm-12">
+
+			  		<div class="btn-group btn-group-justified">
+				    	<a href="https://github.com/welisonmenezes/wm-gridfolio" target="_blank" class="btn btn-primary" title="WM Gridfolio no Github">GITHUB</a>
+
+				    	<a href="https://twitter.com/WelisonMenezes" target="_blank" class="btn btn-primary" title="Perfil no Twitter">TWITTER</a>
+
+				    	<a href="http://welisonmenezes.com.br/" target="_blank" class="btn btn-primary" title="Portifólio Welison Menezes">WEBSITE</a>
+				    </div>
+
+			  		<article class="body">
+			  			<h1>
+			  				WM Zoom
+			  			</h1>
+			  			<h2>
+			  				Plugin jQuery para visualização de imagens em alta definição
+			  			</h2>
+			  			<p>
+			  				Opções de configuração do plugin jQuery WM Zoom
+			  			</p>
+			  			<hr>
+
+
+			  			<h3>
+			  				O objeto config
+			  			</h3>
+
+			  			<p>
+			  				O objeto config é responsável pelas configurações do plugin. Exemplo:
+			  			</p>
+
+				  		<pre class="brush: js;">
+				  			$('.my-zoom').WMZoom({
+								config : {
+									inner : false
+								}
+							});
+						</pre>
+
+						<h3>
+			  				Opções do objeto config
+			  			</h3>
+
+			  			<p>
+			  				Segue lista de opções para o objeto de configurações do plugin:
+			  			</p>
+
+			  			<table class="table table-bordered">
+							<thead>
+								<tr>
+								  	<th>
+								  		Atributo
+								  	</th>
+								  	<th style="width:70%;">
+								  		Descrição
+								  	</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<em>stageW</em>
+									</td>
+									<td style="width:70%;">
+										int - Define a largura da area de visualização da imagem grande. Caso a opção inner for true stageW será ignorado. Default 
+										<em>
+											500
+										</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<em>stageH</em>
+									</td>
+									<td style="width:70%;">
+										int - Define a altura da area de visualização da imagem grande. Caso a opção inner for true stageH será ignorado. Default 
+										<em>
+											400
+										</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<em>inner</em>
+									</td>
+									<td style="width:70%;">
+										boolean - Define se o zoom será em uma area exterana em relação a imagem default ou se será interna. Se true será interna. Default 
+										<em>
+											false
+										</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<em>position</em>
+									</td>
+									<td style="width:70%;">
+										string - Define em que posição externa a area de visualização será mostrado. Opções ['top', 'right', 'bottom', 'left']. Caso a opção inner for true position será ignorado. Default 
+										<em>
+											'right'
+										</em>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<em>margin</em>
+									</td>
+									<td style="width:70%;">
+										int - Define o espacamento entre a imagem default e o box de visualização. Caso a opção inner for true margin será ignorado Default 
+										<em>
+											true
+										</em>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+			  			<p>Exemplo:</p>
+
+						<pre class="brush: js;">
+							$('.my-zoom').WMZoom({
+								config : {
+				                    stageW : 500,
+				                    stageH : 400,
+				                    inner  : false,
+				                    position : 'right', // [top, right, bottom, left]
+				                    margin : 10
+				                }
+							});
+						</pre><br><br>
+
+						<h3>
+			  				html data attribute
+			  			</h3>
+
+			  			<p>
+			  				Segue lista de parâmetros obrigátorios que devem ser passados via atributos html:
+			  			</p>
+
+			  			<table class="table table-bordered">
+							<thead>
+								<tr>
+								  	<th>
+								  		Atributo
+								  	</th>
+								  	<th style="width:70%;">
+								  		Descrição
+								  	</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<em>data-hight-src</em>
+									</td>
+									<td style="width:70%;">
+										Define a url da imagem em alta resolução que será visualizada no zoom
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<em>data-loader-src</em>
+									</td>
+									<td style="width:70%;">
+										Define a url do gif animado que será exibido enquanto a imagem grande carrega no zoom
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+			  			<p>Exemplo:</p>
+
+						<pre class="brush: html;">
+							<img src="default image here" class="wm-zoom-default-img" alt="alternative text" data-hight-src="hight image here" data-loader-src="loader image here">
+						</pre><br><br>
+
+			  		</article>
+
+			  		<div class="btn-group btn-group-justified">
+				    	<a href="https://github.com/welisonmenezes/wm-gridfolio" target="_blank" class="btn btn-primary" title="WM Gridfolio no Github">GITHUB</a>
+
+				    	<a href="https://twitter.com/WelisonMenezes" target="_blank" class="btn btn-primary" title="Perfil no Twitter">TWITTER</a>
+
+				    	<a href="http://welisonmenezes.com.br/" target="_blank" class="btn btn-primary" title="Portifólio Welison Menezes">WEBSITE</a>
+				    </div>
+			  		
+			  	</div>
+
+			</div>
+
+		</div><!-- /.container --> <br>
+
+		<br><br><br>
+
+		<footer class="footer">
+			<div class="container">
+			<p class="text-muted">&copy; Todos os direitos reservados. 2014 || Welison Menezes</p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="assets/js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				SyntaxHighlighter.all();
+			});
+		</script>
+	</body>
+</html>

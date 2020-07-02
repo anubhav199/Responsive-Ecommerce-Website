@@ -1,0 +1,27 @@
+.form{width:500px;border-radius:20px;height:115vh;}
+.contact-heading{font-size:40px;font-weight: 700;text-transform: capitalize;font-family:Arial, Helvetica, sans-serif}
+::placeholder{text-transform:capitalize;}
+*:focus {
+    outline: none;
+}
+.contact-heading{font-size:40px;font-weight: 700;text-transform: capitalize;font-family:Arial, Helvetica, sans-serif}
+a{color:rgb(148, 141, 141)}
+a:hover{text-decoration: none;}
+.send-button{border-radius:30px;text-transform: uppercase;font-weight: 600;padding:3% 3%;background-size:300% 100%;
+    background-image: linear-gradient(to right,fuchsia,deepskyblue,fuchsia);font-family: Arial, Helvetica, sans-serif;transition:all 0.5s linear;}
+    .send-button:hover{background-position: 100% 0%;transition: all 0.5s linear;}
+.name-hide,.mobile-hide,.email-hide,.hide-message{color:red;text-transform: capitalize;}
+@media screen and (max-width:550px){
+    .form{width:450px}
+}
+@media screen and (max-width:425px){
+    .form{width:380px}
+}
+@media screen and (max-width:375px){
+    .form{width:330px}
+    .contact-heading{font-size:30px;}
+
+}
+@media screen and (max-width:320px){
+    .form{margin-left:-5%;width:318px}
+}

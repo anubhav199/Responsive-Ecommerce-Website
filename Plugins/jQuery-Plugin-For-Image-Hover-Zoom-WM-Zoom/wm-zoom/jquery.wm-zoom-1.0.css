@@ -1,0 +1,54 @@
+/**
+ *
+ *	essential styles
+ *		- the following styles are essential to the functioning of the plugin
+ *
+ **/
+.wm-zoom-container, .wm-zoom-box{
+	position: relative;
+}
+img.wm-zoom-default-img{
+	height: auto;
+}
+.wm-zoom-lens{
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.wm-zoom-hight{
+	display: none;
+	overflow: hidden;
+	position: absolute;
+}
+.wm-zoom-hight img{
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+img.wm-zoom-loader{
+	z-index: 1;
+}
+img.wm-zoom-hight-img{
+	z-index: 2;
+}
+
+/**
+ *
+ *	sample styles
+ *  	- the following styles are just one example. You can customize at will
+ *
+ *
+ **/
+.wm-zoom-lens{
+	background: #fff;
+	-moz-opacity: 0.30;
+	-khtml-opacity: 0.30;
+	opacity: 0.30;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+	filter:alpha(opacity=30);
+}
+.wm-zoom-hight{
+	background: #f4f4f4;
+}
