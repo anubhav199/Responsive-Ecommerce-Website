@@ -21,7 +21,7 @@ html,body{overflow-x: hidden;overflow-y: auto;scroll-behavior: smooth;transition
 .img-men{height:250px;width:250px;}
 a:hover{text-decoration: none;color:black}
 a{color:black}
-#change-color{z-index:2;position:fixed;transition: 0.2s linear;}
+#change-color{z-index:2;position:inherit;transition: 0.2s linear;}
 .change{position:fixed;z-index:2;opacity:0.9;background-color:rgba(128, 128, 128, 0.596);}
 .font{font-size:22px;margin-left:2%}
 .font-1{font-size:22px}
