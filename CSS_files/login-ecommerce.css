@@ -20,7 +20,7 @@ html,body{overflow-x: hidden;}
 .transparent{background-image:url('desktop.jpg');background-size:cover;background-attachment:fixed;}
 a:hover{text-decoration: none;}
 #change-color{z-index:2;position:fixed;transition: 0.2s linear;}
-.change{position:fixed;z-index:2;opacity:0.9;background-color:rgba(128, 128, 128, 0.596);}
+.change{position:fixed;z-index:2;opacity:0.9;background-color:rgba(14, 13, 13, 0.788);}
 .font{font-size:22px;margin-left:2%}
 .font-1{font-size:22px}
 .icons-1,.icons,.icons-2,.icons-3{border:1px solid transparent;padding:2% 2.2%;margin-left:2%;border-radius:50px;background-color:rgb(49, 48, 48);}

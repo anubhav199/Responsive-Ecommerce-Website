@@ -5,6 +5,7 @@ html,body{overflow-x: hidden;overflow-y: auto;}
 .menu{text-transform:uppercase;margin-left:5%;font-weight:bold}
 .menu-bar{display:none;padding-right:8%;}
 .profile-icon{height:30px;}
+.logo-sift{margin-top: 10px!important;margin-bottom:10px!important;}
 .logo-2,.side-bar,.close{display:none;}
 .color{color:black;text-decoration: none;}
 .color:hover{color:black;text-decoration: none;}
@@ -78,7 +79,7 @@ html,body{overflow-x: hidden;overflow-y: auto;}
     .side-bar{height:83.9vh;margin-left:-8%}
 }
 @media screen and (max-width:976px){
-    .logo-sift{margin-top:-10%;margin-bottom:-10%;}
+    .logo-sift{margin-top: 10px!important;margin-bottom:10px!important;}
 }
 @media screen and (max-width:1150px){
     .logo-sift{margin-top:-8%;margin-bottom:-8%;}
