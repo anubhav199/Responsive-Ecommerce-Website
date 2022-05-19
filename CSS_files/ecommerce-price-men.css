@@ -4,7 +4,11 @@ html,body{overflow-x: hidden;overflow-y: auto;}
 .menu-1{text-transform:uppercase;margin-left:7%;font-weight:bold}
 .menu{text-transform:uppercase;margin-left:5%;font-weight:bold}
 .menu-bar{display:none;padding-right:8%;}
-.profile-icon{height:30px;}
+/* .profile-icon{height:30px;} */
+/*  */
+.profile-icon{height:20px;}
+.logo-sift{margin-top: 5px!important;margin-bottom:5px!important;}
+/* end */
 .logo-2,.side-bar,.close{display:none;}
 .color{color:black;text-decoration: none;}
 .color:hover{color:black;text-decoration: none;}

@@ -10,7 +10,7 @@ html,body{overflow-x: hidden;overflow-y: auto;}
 .color{color:black;text-decoration: none;}
 .color:hover{color:black;text-decoration: none;}
 .profile-icon::after{content:"hello user";height:10%;width:10%;background-color: firebrick;}
-.pre-profile-1:hover{background-color:rgba(212, 206, 206, 0.993)}
+/* .pre-profile-1:hover{background-color:rgba(212, 206, 206, 0.993)} */
 .menu-bar-1,.close{display:none;}
 .pre-side-bar{list-style:none;text-transform: uppercase;font-weight: 600;font-size:15px;display:none;}
 .menu-bar-2{display: none;}
@@ -85,7 +85,13 @@ html,body{overflow-x: hidden;overflow-y: auto;}
     .logo-sift{margin-top:-8%;margin-bottom:-8%;}
 }
 /*top-containt*/
-
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+  }
+  #header.header-scrolled, #header.header-inner-pages {
+    background: rgba(0, 0, 0, 0.8);
 /*middle*/
 .header{text-transform: capitalize;font-size:40px;}
 @media screen and (max-width:991px){
